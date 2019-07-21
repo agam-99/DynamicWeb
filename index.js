@@ -26,8 +26,6 @@ const server = http.createServer((req, res) => {
         res.end("404 page not found");
     }
 });
-const PORT = process.env.PORT;
+const PORT = process.env.PORT||3000;
 
-server.listen(PORT,()=>{
-    console.log(`Server started on port ${PORT}`);
-});
+server.listen(PORT);
