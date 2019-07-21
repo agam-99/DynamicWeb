@@ -26,6 +26,6 @@ const server = http.createServer((req, res) => {
         res.end("404 page not found");
     }
 });
-const PORT = process.env.PORT||3000;
+const PORT = process.env.PORT||80;
 
 server.listen(PORT);
